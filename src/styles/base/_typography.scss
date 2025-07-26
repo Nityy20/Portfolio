@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+p {
+  line-height: 1.7;
+  color: #444;
+}

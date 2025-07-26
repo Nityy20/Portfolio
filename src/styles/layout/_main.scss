@@ -1,0 +1,6 @@
+@use "../abstracts/mixins";
+
+main {
+  @include mixins.container;
+  min-height: 400px;
+}

@@ -1,0 +1,118 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    variables.$color-primary 0%,
+    variables.$color-secondary 100%
+  );
+  padding: 0;
+
+  .container {
+    @include mixins.container;
+    display: flex;
+    align-items: center;
+    min-height: 420px;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+
+  &__content {
+    flex: 1.2;
+    max-width: 510px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 3.3em;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.22em;
+      line-height: 1.05;
+    }
+
+    h2 {
+      font-size: 2.1em;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 1.13em;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 1.21em;
+      color: #fff;
+      margin-bottom: 1.8em;
+      font-weight: 400;
+      line-height: 1.56;
+    }
+  }
+
+  &__tags {
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      font-size: 1em;
+      font-weight: 500;
+      border-radius: 16px;
+      padding: 0.38em 1.3em;
+      min-width: 98px;
+      min-height: 38px;
+      box-shadow: 0 2px 8px #0001;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    background: #fff;
+    color: variables.$color-primary;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 1em 2.2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 0.4em;
+    transition: background 0.18s, color 0.18s;
+    box-shadow: 0 1px 8px #0002;
+    text-decoration: none;
+    &:hover {
+      background: variables.$color-primary;
+      color: #fff;
+      border: 1px solid #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__image {
+    flex: 1.1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 0;
+    padding-right: 4em;
+  }
+
+  &__photo {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px #0002;
+    border: 6px solid #fff;
+    background: #fff;
+  }
+}

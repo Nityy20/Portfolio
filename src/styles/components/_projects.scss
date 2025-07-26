@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+.projects {
+  text-align: center;
+  padding: 2.7em 0 2em 0;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    font-weight: 800;
+    color: #222c35;
+  }
+
+  p {
+    color: #6f73a6;
+    font-size: 1.13em;
+    margin-bottom: 2em;
+  }
+
+  .projects__list {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    margin-top: 2.5em;
+    flex-wrap: wrap;
+  }
+}

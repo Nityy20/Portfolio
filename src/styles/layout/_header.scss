@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header {
+  background: #fff;
+  box-shadow: 0 2px 16px #0001;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  &__container {
+    @include mixins.container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #222c35;
+  }
+  nav {
+    a {
+      margin-left: 1.5em;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1.06em;
+      transition: color 0.2s;
+      &:hover {
+        color: variables.$color-primary;
+      }
+    }
+  }
+}
