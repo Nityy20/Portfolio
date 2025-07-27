@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="hero__image-block hero__image-block--mobile">
             <div className="hero__image">
               <img
-                src="/src/assets/profile.jpg"
+                src="/profile.jpg"
                 alt="Votre portrait"
                 className="hero__photo"
               />
@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="hero__image-block hero__image-block--desktop">
           <div className="hero__image">
             <img
-              src="/src/assets/profile.jpg"
+              src="/profile.jpg"
               alt="Votre portrait"
               className="hero__photo"
             />
