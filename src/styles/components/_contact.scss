@@ -1,132 +1,146 @@
 @use "../abstracts/variables";
 
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  font-weight: 800;
+  color: #222c35;
+  text-align: center;
+}
+
 .contact {
-  &__title {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.2em;
-    margin-top: 0.7em;
-  }
+  margin-top: 4em;
+  text-align: center;
+
   &__subtitle {
+    color: #6f73a6;
+    font-size: 1.13em;
+    margin-bottom: 2em;
     text-align: center;
-    color: #60637b;
-    font-size: 1.17em;
-    margin-bottom: 2.5em;
   }
 
   &__card {
-    margin: 0 auto;
+    max-width: 95vw;
+    width: 100%;
     background: #fff;
-    border-radius: 26px;
-    box-shadow: 0 8px 32px #0002;
+    border-radius: 25px;
+    margin: 2.5em auto 0 auto;
     display: flex;
+    justify-content: space-between;
+    padding: 3.2em 3.5em 2.2em 3.5em;
+    box-shadow: 0 4px 32px #b8b8c94d;
     gap: 6em;
-    justify-content: center;
     align-items: flex-start;
-    max-width: 940px;
-    padding: 3em 3.5em 2.7em 3.5em;
-    margin-bottom: 3em;
   }
 
   &__infos {
     display: flex;
     flex-direction: column;
-    gap: 2.1em;
-    min-width: 265px;
+    gap: 2.3em;
+    align-items: flex-start;
+    min-width: 290px;
+    max-width: 300px;
+    flex: 1 1 320px;
   }
 
   &__info {
     display: flex;
     align-items: center;
-    gap: 1.15em;
+    gap: 1.2em;
   }
 
   &__icon {
-    background: #7f7fd5;
-    color: #fff;
-    border-radius: 17px;
-    width: 52px;
-    height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.65em;
+    width: 54px;
+    height: 54px;
+    border-radius: 15px;
+    background: #7f7fd5;
+    color: #fff;
+    font-size: 2em;
     flex-shrink: 0;
   }
 
   &__label {
     font-weight: 700;
-    font-size: 1.08em;
+    font-size: 1.12em;
     color: #222c35;
+    margin-bottom: 0.1em;
+    text-align: left;
   }
+
   &__item-value {
-    color: #60637b;
+    color: #4d4e6d;
     font-size: 1em;
-    word-break: break-all;
+    text-align: left;
+    word-break: break-word;
   }
 
   &__link {
-    color: #60637b;
-    text-decoration: none;
+    color: #7f7fd5;
+    text-decoration: underline;
+    font-size: 1em;
+    font-weight: 500;
     transition: color 0.15s;
     &:hover {
-      color: #7f7fd5;
-      text-decoration: underline;
+      color: #5e60ce;
     }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
-    min-width: 370px;
-    width: 370px;
+    gap: 1.25em;
+    min-width: 350px;
+    flex: 2 1 450px;
+    align-items: stretch;
+
     label {
+      text-align: left;
       font-weight: 500;
-      color: #38385f;
-      font-size: 1.05em;
-      margin-bottom: 0.28em;
+      color: #333b4e;
+      margin-bottom: 0.1em;
       display: flex;
       flex-direction: column;
-      gap: 0.65em;
+      gap: 0.5em;
     }
+
     input,
     textarea {
-      background: #f5f6fa;
-      border: none;
-      border-radius: 11px;
-      padding: 1em 1.25em;
-      font-size: 1.04em;
-      color: #222c35;
-      font-family: inherit;
-      outline: none;
-      transition: box-shadow 0.13s;
-      box-shadow: 0 2px 7px #0001;
-      resize: none;
-    }
-    textarea {
-      min-height: 85px;
-      max-width: 100%;
-    }
-    input:focus,
-    textarea:focus {
-      box-shadow: 0 0 0 2px #b1b4f5;
-    }
-    button[type="submit"] {
-      margin-top: 0.6em;
-      background: #7f7fd5;
-      color: #fff;
+      width: 100%;
+      background: #f6f7fb;
       border: none;
       border-radius: 10px;
-      padding: 1.05em 0;
+      padding: 0.9em 1.1em;
+      font-size: 1.06em;
+      margin-top: 0.3em;
+      color: #333b4e;
+      transition: box-shadow 0.15s;
+      box-shadow: 0 1px 4px #d4d4e466;
+      resize: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      box-shadow: 0 2px 8px #b8b8c988;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      background: #7f7fd5;
+      color: #fff;
       font-size: 1.13em;
       font-weight: 700;
+      border-radius: 10px;
+      padding: 1em 0;
+      border: none;
+      margin-top: 1.3em;
       cursor: pointer;
-      transition: background 0.15s;
-      box-shadow: 0 2px 12px #0001;
+      transition: background 0.18s;
       &:hover {
-        background: #6767c8;
+        background: #5e60ce;
       }
     }
   }

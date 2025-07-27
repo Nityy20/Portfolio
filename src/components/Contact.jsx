@@ -5,8 +5,8 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
   return (
-    <section className="contact">
-      <h2 className="contact__title">Me contacter</h2>
+    <section className="contact" id="contact">
+      <h2 className="section-title">Me contacter</h2>
       <p className="contact__subtitle">Discutons de votre prochain projet</p>
       <div className="contact__card">
         <div className="contact__infos">

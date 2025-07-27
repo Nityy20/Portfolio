@@ -5,8 +5,8 @@ export default function Hero() {
     <section className="hero" id="presentation">
       <div className="container hero__wrapper">
         <div className="hero__content">
-          <h1>Bonjour, je suis</h1>
-          <h2>Vincent Salingue</h2>
+          <h1>Bonjour,</h1>
+          <h2>Je suis Vincent Salingue</h2>
           <p>
             Développeur passionné avec une expertise en création d’expériences
             numériques innovantes. Je transforme les idées en solutions

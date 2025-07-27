@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div>Mon Portfolio</div>
+      <div>Vincent Salingue : Mon Portfolio</div>
       <div>Créateur d’expériences numériques exceptionnelles</div>
       <div className="footer__socials">
         <a href="#">
