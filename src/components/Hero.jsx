@@ -9,6 +9,33 @@ export default function Hero() {
         <div className="hero__content">
           <h1>Bonjour,</h1>
           <h2>Je suis Vincent Salingue</h2>
+          <div className="hero__image-block hero__image-block--mobile">
+            <div className="hero__image">
+              <img
+                src="/src/assets/profile.jpg"
+                alt="Votre portrait"
+                className="hero__photo"
+              />
+            </div>
+            <div className="hero__socials">
+              <a
+                href="https://www.linkedin.com/in/vincent-salingue/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero__social-link"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                href="https://github.com/Nityy20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero__social-link"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </div>
           <p>
             Développeur passionné avec une expertise en création d’expériences
             numériques innovantes. Je transforme les idées en solutions
@@ -24,7 +51,7 @@ export default function Hero() {
             Voir mes projets
           </a>
         </div>
-        <div className="hero__image-block">
+        <div className="hero__image-block hero__image-block--desktop">
           <div className="hero__image">
             <img
               src="/src/assets/profile.jpg"

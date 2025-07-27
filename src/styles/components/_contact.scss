@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 
 .section-title {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.3em;
   font-weight: 800;
   color: #222c35;
@@ -14,7 +14,7 @@
 
   &__subtitle {
     color: #6f73a6;
-    font-size: 1.13em;
+    font-size: 1em;
     margin-bottom: 2em;
     text-align: center;
   }
@@ -137,10 +137,78 @@
       padding: 1em 0;
       border: none;
       margin-top: 1.3em;
+      margin-bottom: 0;
       cursor: pointer;
       transition: background 0.18s;
       &:hover {
         background: #5e60ce;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 2em;
+
+    &__card {
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+      padding: 2em 1em 0.5em 1em;
+      max-width: 98vw;
+      min-height: 0;
+    }
+
+    &__infos {
+      align-items: center;
+      width: 100%;
+      max-width: 350px;
+      gap: 1.5em;
+      margin-bottom: 2.2em;
+    }
+
+    &__info {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+      width: 100%;
+    }
+
+    &__label,
+    &__item-value,
+    &__link {
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-size: 0.99em;
+    }
+
+    &__icon {
+      width: 44px;
+      height: 44px;
+      font-size: 1.4em;
+    }
+
+    &__form {
+      min-width: 0;
+      width: 100%;
+      gap: 1.5em;
+      flex: 1 1 auto;
+
+      label {
+        font-size: 0.97em;
+      }
+
+      input,
+      textarea {
+        font-size: 0.97em;
+        padding: 0.7em 0.8em;
+      }
+
+      button[type="submit"] {
+        margin-bottom: 1em;
+        margin-top: 1em;
       }
     }
   }

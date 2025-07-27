@@ -10,8 +10,10 @@
   z-index: 20;
   width: 100%;
 
-  &__container {
+  .container {
     @include mixins.container;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,9 +29,11 @@
     color: #222c35;
   }
 
-  nav {
+  &__nav {
+    display: flex;
+    gap: 2.5em;
+
     a {
-      margin-left: 1.5em;
       text-decoration: none;
       color: #333;
       font-weight: 500;
@@ -38,6 +42,22 @@
       &:hover {
         color: variables.$color-primary;
       }
+    }
+  }
+
+  @include mixins.mobile {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      gap: 1em;
+    }
+
+    &__nav {
+      display: none;
     }
   }
 }
