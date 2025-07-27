@@ -20,8 +20,8 @@
   }
 
   &__card {
-    max-width: 95vw;
     width: 100%;
+    max-width: 1070px;
     background: #fff;
     border-radius: 25px;
     margin: 2.5em auto 0 auto;
@@ -98,7 +98,7 @@
 
     label {
       text-align: left;
-      font-weight: 500;
+      font-weight: 700;
       color: #333b4e;
       margin-bottom: 0.1em;
       display: flex;

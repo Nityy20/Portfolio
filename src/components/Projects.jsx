@@ -7,7 +7,7 @@ const projects = [
     description:
       "Une application moderne avec interface utilisateur intuitive et fonctionnalités avancées.",
     tags: ["React", "Node.js"],
-    gradient: "linear-gradient(135deg, #7f7fd5 0%, #86a8e7 100%)",
+    gradient: "linear-gradient(135deg, #2626a0ff 0%, #8b97afff 100%)",
     link: "#",
   },
   {
