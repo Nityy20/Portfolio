@@ -145,6 +145,22 @@
       }
     }
   }
+
+  &__thanks {
+    margin-top: 1.3em;
+    color: #7f7fd5;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.07em;
+    animation: fadeOut 1s ease 9s forwards;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 767px) {

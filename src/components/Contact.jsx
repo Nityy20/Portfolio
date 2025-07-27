@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
+  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/mwpqbkwv", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    setLoading(false);
+    if (response.ok) {
+      setSent(true);
+      form.reset();
+    } else {
+      alert("Erreur lors de l'envoi du message.");
+    }
+  };
+
   return (
     <section className="contact" id="contact">
       <h2 className="section-title">Me Contacter</h2>
@@ -61,20 +85,37 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form className="contact__form">
+        <form className="contact__form" onSubmit={handleSubmit}>
           <label>
             Nom
-            <input type="text" placeholder="Votre nom" required />
+            <input type="text" name="name" placeholder="Votre nom" required />
           </label>
           <label>
             Email
-            <input type="email" placeholder="Votre email" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Votre email"
+              required
+            />
           </label>
           <label>
             Message
-            <textarea rows={4} placeholder="Votre message..." required />
+            <textarea
+              name="message"
+              rows={4}
+              placeholder="Votre message..."
+              required
+            />
           </label>
-          <button type="submit">Envoyer le message</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Envoi en cours..." : "Envoyer le message"}
+          </button>
+          {sent && (
+            <div className="contact__thanks">
+              Merci, votre message a bien été envoyé !
+            </div>
+          )}
         </form>
       </div>
     </section>
