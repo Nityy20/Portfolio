@@ -58,16 +58,43 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
 
-    span {
-      background: #f2f3fc;
-      color: #6f73a6;
-      font-size: 0.97em;
-      border-radius: 5px;
-      padding: 0.24em 1.1em;
-      font-weight: 500;
-      display: inline-block;
-    }
+  &__tag {
+    font-size: 0.97em;
+    border-radius: 5px;
+    padding: 0.24em 1.1em;
+    font-weight: 500;
+    display: inline-block;
+    background: #f6f6f6;
+    color: #60637b;
+    letter-spacing: 0.01em;
+    transition: background 0.13s, color 0.13s;
+  }
+
+  &__tag--react {
+    background: #e0f4fd;
+    color: #1676b5;
+  }
+  &__tag--reactrouter {
+    background: #ffe1e2;
+    color: #b84144;
+  }
+  &__tag--javascript {
+    background: #eee062;
+    color: #6e6407;
+  }
+  &__tag--api {
+    background: #e2e1fa;
+    color: #5e60ce;
+  }
+  &__tag--nodejs {
+    background: #e3f8e2;
+    color: #278127;
+  }
+  &__tag--mongodb {
+    background: #d3f7da;
+    color: #104921;
   }
 
   &__btn {

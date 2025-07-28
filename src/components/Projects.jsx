@@ -1,30 +1,38 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import {
+  faCity,
+  faPencil,
+  faBookBookmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
-    title: "Application Web",
+    title: "KASA",
     description:
-      "Une application moderne avec interface utilisateur intuitive et fonctionnalités avancées.",
-    tags: ["React", "Node.js"],
+      "Conception front-end d’une application web de location immobilière, avec gestion du routage et affichage dynamique des données.",
+    tags: ["React", "ReactRouter"],
     gradient: "linear-gradient(135deg, #2626a0ff 0%, #8b97afff 100%)",
-    link: "#",
+    link: "https://github.com/Nityy20/kasa.git",
+    icon: faCity,
   },
   {
-    title: "Site E-commerce",
+    title: "SOPHIE BLUEL",
     description:
-      "Plateforme de vente en ligne avec système de paiement et gestion des commandes.",
-    tags: ["JavaScript", "CSS"],
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-    link: "#",
-  },
-  {
-    title: "Application Mobile",
-    description:
-      "Application mobile cross-platform avec design responsive et performances optimisées.",
-    tags: ["React Native", "API"],
+      "Développement d’une page web interactive en JavaScript pour une designeuse, avec authentification, modale d’upload et appels à une API.",
+    tags: ["JavaScript", "API"],
     gradient: "linear-gradient(135deg, #f953c6 0%, #b91d73 100%)",
-    link: "#",
+    link: "https://github.com/Nityy20/sophie-bluel.git",
+    icon: faPencil,
+  },
+  {
+    title: "MON VIEUX GRIMOIRE",
+    description:
+      "Conception back-end d’une application web de notation de livres, avec API sécurisée, base de données MongoDB et gestion des images.",
+    tags: ["NodeJS", "MongoDB"],
+    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    link: "https://github.com/Nityy20/mon-vieux-grimoire-v2.git",
+    icon: faBookBookmark,
   },
 ];
 
