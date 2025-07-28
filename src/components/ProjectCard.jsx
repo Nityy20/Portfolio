@@ -25,11 +25,11 @@ export default function ProjectCard({
   description,
   tags,
   gradient,
-  link,
   icon,
+  onClick,
 }) {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick} tabIndex={0} role="button">
       <div className="card__cover" style={{ background: gradient }}>
         <FontAwesomeIcon icon={icon} className="card__icon" />
       </div>
@@ -43,14 +43,9 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-        <a
-          className="card__btn"
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className="card__btn" tabIndex={-1}>
           Voir le projet
-        </a>
+        </button>
       </div>
     </div>
   );

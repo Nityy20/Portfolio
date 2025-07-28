@@ -110,6 +110,8 @@
     margin-top: auto;
     font-size: 1.08em;
     transition: background 0.15s;
+    box-shadow: none !important;
+    border: none;
     &:hover {
       background: #86a8e7;
       color: #fff;

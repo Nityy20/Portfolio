@@ -1,0 +1,125 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  background: #191c2088;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 2.5vw;
+}
+
+.modal-card {
+  position: relative;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 38px #0002;
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  overflow: hidden;
+  animation: modal-in 0.21s cubic-bezier(0.32, 1.2, 0.36, 1) 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes modal-in {
+  0% {
+    transform: scale(0.97) translateY(22px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  z-index: 3;
+  transition: color 0.16s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 0.68;
+}
+
+.modal-card__cover {
+  width: 100%;
+  min-height: 100px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-card__icon {
+  color: #fff;
+  font-size: 3.2em;
+  filter: drop-shadow(0 3px 20px #0002);
+}
+
+.modal-card__body {
+  padding: 2.2em 1.8em 2.3em 1.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-card__title {
+  font-size: 1.38em;
+  font-weight: 800;
+  color: #222c35;
+  margin-bottom: 0.7em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.modal-card__desc {
+  color: #60637b;
+  font-size: 1.08em;
+  margin-bottom: 1.8em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-card__tags {
+  display: flex;
+  gap: 0.7em;
+  margin-bottom: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-card__btn {
+  display: block;
+  width: 100%;
+  background: #8d8fe2;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 1em 0;
+  text-decoration: none;
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  border: none;
+  transition: background 0.15s;
+}
+
+.modal-card__btn:hover,
+.modal-card__btn:focus {
+  background: #7f7fd5;
+  color: #fff;
+}
