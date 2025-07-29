@@ -35,7 +35,7 @@ const projects = [
     description:
       "Conception back-end d’une application web de notation de livres, avec API sécurisée, base de données MongoDB et gestion des images.",
     longDescription:
-      "Ce projet m’a permis de concevoir le back-end complet d’un site de notation de livres. J’ai utilisé Node.js avec le framework Express pour créer une API REST sécurisée et performante. La base de données MongoDB a été modélisée avec Mongoose afin de gérer les utilisateurs, les livres, les notations et les images. Le projet inclut un système d’authentification (signup/login avec JWT), la sécurisation des données, le traitement des fichiers uploadés avec Multer, et le calcul dynamique des notes moyennes. J’ai structuré le code selon une architecture MVC pour garantir lisibilité et évolutivité.",
+      "Ce projet m’a permis de concevoir le back-end complet d’un site de notation de livres. J’ai utilisé Node.js avec le framework Express pour créer une API REST sécurisée et performante. La base de données MongoDB a été modélisée avec Mongoose afin de gérer les utilisateurs, les livres, les notations et les images. Le projet inclut un système d’authentification (signup/login avec JWT), la sécurisation des données, le traitement des fichiers uploadés avec Multer, et le calcul dynamique des notes moyennes.",
     tags: ["NodeJS", "MongoDB"],
     gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
     link: "https://github.com/Nityy20/mon-vieux-grimoire-v2.git",
