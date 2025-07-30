@@ -41,6 +41,12 @@ export default function Hero() {
             numériques innovantes. Je transforme les idées en solutions
             créatives et fonctionnelles.
           </p>
+          <p>
+            Formé au développement web à travers une formation
+            professionnalisante chez OpenClassrooms, je maîtrise les outils et
+            méthodes du développement moderne.
+          </p>
+
           <div className="hero__tags">
             <span>JavaScript</span>
             <span>React</span>
