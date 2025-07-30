@@ -290,31 +290,33 @@
     &__card {
       flex-direction: column;
       align-items: center;
-      gap: 2em;
+      gap: 1.2em;
       padding: 2em 1em 0.5em 1em;
       max-width: 98vw;
       min-height: 0;
     }
 
     &__infos {
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
       max-width: 350px;
-      gap: 1.5em;
-      margin-bottom: 2.2em;
+      gap: 2em;
+      margin-bottom: 0;
+      padding-left: 20px;
     }
 
     &__info {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      gap: 0.5em;
+      gap: 1em;
       width: 100%;
+      justify-content: flex-start;
     }
 
     &__label,
     &__item-value,
     &__link {
-      text-align: center;
+      text-align: left;
       width: 100%;
       display: block;
       font-size: 0.99em;
@@ -324,6 +326,7 @@
       width: 44px;
       height: 44px;
       font-size: 1.4em;
+      flex-shrink: 0;
     }
 
     &__form {
