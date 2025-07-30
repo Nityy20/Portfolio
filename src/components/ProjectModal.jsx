@@ -24,7 +24,15 @@ export default function ProjectModal({ show, project, onClose }) {
         </div>
         <div className="modal-card__body">
           <h3 className="modal-card__title">{project.title}</h3>
-          <p className="modal-card__desc">{project.longDescription}</p>
+          <div className="modal-card__desc">
+            {Array.isArray(project.longDescription) ? (
+              project.longDescription.map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))
+            ) : (
+              <p>{project.longDescription}</p>
+            )}
+          </div>
           <div className="modal-card__tags">
             {project.tags.map((tag, idx) => (
               <span
